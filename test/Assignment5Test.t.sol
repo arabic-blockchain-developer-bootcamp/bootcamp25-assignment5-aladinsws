@@ -11,7 +11,7 @@ contract Assignment5Test is Test {
         assignment = new Assignment5();
     }
 
-    function testInitialCounter() public {
+    function testInitialCounter() public view {
         uint counter = assignment.counter();
         assertEq(counter, 0, "Counter should start at 0");
     }
